@@ -1,21 +1,14 @@
-
+import { Dislike, Bookmark, Details } from 'assets/icons'; 
+import Action from 'components/card/Action';
 
 const CardActions = () => {
   return (
     <div>
-      <button>
-        Post now
-      </button>
+      <button>Post now</button>
       <div className="items__overlay">
-        <div className="action__container">
-          <img src="assets/icons/Smock_ThumbDownOutline_18_N.svg" />
-        </div>
-        <div className="action__container">
-          <img src="assets/icons/bookmark.svg" />
-        </div>
-        <div className="action__container">
-          <img src="assets/icons/svgexport-15.svg" />
-        </div>
+        <Action icon={Dislike} info="dislike" />
+        <Action icon={Bookmark} info="bookmark" />
+        <Action icon={Details} info="details" />
       </div>
     </div>
   )

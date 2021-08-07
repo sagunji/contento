@@ -1,7 +1,7 @@
 import { Router, Switch, Route } from 'react-router-dom';
-import * as ROUTES from '../constants/routes';
+import * as ROUTES from 'constants/routes';
 
-import history from '../utils/history';
+import history from 'utils/history';
 
 import MainPage from './MainPage';
 

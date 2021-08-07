@@ -1,4 +1,4 @@
-import Card from 'components/card/Card';
+import Card from 'components/card';
 
 const News = ({ children, styles, posts }) => {
   return (
