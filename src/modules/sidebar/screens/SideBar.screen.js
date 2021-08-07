@@ -1,4 +1,4 @@
-import FilterWrapper from 'modules/sidebar/components/FIlterWrapper';
+import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
 import Item from 'modules/sidebar/components/Item';
 
 const GENERAL = [{
