@@ -1,7 +1,8 @@
 import { DATA } from 'constants/data';
-import Wrapper from 'modules/landing/components/news/Wrapper';
+import Wrapper from 'modules/landing/components/Wrapper';
+import { Link } from 'react-router-dom';
 
-import News from '../components/news/News';
+import News from '../components/news';
 
 const Landing = () => {
   const TODAY_MOCK_DATA = DATA.concat(DATA);
@@ -23,10 +24,10 @@ const Landing = () => {
               Employee Branding
             </h1>
           </div>
-          <div className="seemore__wrapper">
+          <Link to="/" className="seemore__wrapper">
             <span className="seemore">See more</span>
             <img src="assets/icons/icons - chevron right - 20.svg" alt="tag" />
-          </div>
+          </Link>
         </div>
       </News>
     </Wrapper>

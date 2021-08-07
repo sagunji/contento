@@ -1,21 +1,22 @@
 import PropTypes from 'prop-types';
-
-const Item = ({ title, icon }) => {
+import { Link } from 'react-router-dom';
+const Item = ({ title, icon, route }) => {
   return (
-    <div className="item">
+    <Link to={route} className="item">
       <div className="image__container">
         <img src={icon} alt={title} />
       </div>
-      <div className="filter">
+      <div className="item__title">
         {title}
       </div>
-    </div>
+    </Link>
   );
 }
 
-Item.prototype = {
+Item.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  route: PropTypes.string.isRequired
 }
 
 export default Item;

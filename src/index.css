@@ -49,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .profile-pic img {
@@ -68,6 +69,7 @@ body {
   opacity: 1;
   margin-right: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .btn__add img {
@@ -127,6 +129,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
 }
 
 .sidebar__nav .item:hover {
@@ -144,7 +147,7 @@ nav a:hover {
   max-width: 100%;
 }
 
-.sidebar__nav .item .filter {
+.sidebar__nav .item .item__title {
   font-size: 16px;
   color: #333333;
 }
@@ -228,6 +231,7 @@ nav a:hover {
   align-items: center;
   margin: 20px 0px;
   gap: 8px;
+  text-decoration: none;
 }
 
 .containter__image {
@@ -291,6 +295,7 @@ section .employee__branding {
 .seemore__wrapper {
   display: inline-flex;
   gap: 2px;
+  text-decoration: none;
 }
 
 .seemore {

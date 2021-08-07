@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FilterWrapper = ({ children }) => {
   return (
     <div className="filter__wrapper">
@@ -5,6 +7,13 @@ const FilterWrapper = ({ children }) => {
       {children}
     </div>
   );
+}
+
+FilterWrapper.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 }
 
 export default FilterWrapper;

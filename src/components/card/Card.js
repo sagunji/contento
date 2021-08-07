@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 import CardActions from './CardActions';
 
 const Card = ({
@@ -16,12 +18,12 @@ const Card = ({
         <CardActions />
       </div>
       
-      <div className="source">
+      <Link to={domain} target="_blank" className="source">
         <div className="containter__image">
           <img src={favicon} alt={sourceTitle} />
         </div>
         <div className="source__title">{sourceTitle}</div>
-      </div>
+      </Link>
       <div className="text">
         <h2>{title}</h2>
         <p>{description}</p>

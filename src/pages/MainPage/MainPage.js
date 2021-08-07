@@ -7,11 +7,11 @@ import SideBar from 'modules/sidebar/screens/SideBar.screen';
 const MainPage = () => {
   return (
     <>
-    <Header />
-    <AppWrapper>
-      <SideBar />
-      <Landing />
-    </AppWrapper>
+      <Header />
+      <AppWrapper>
+        <SideBar />
+        <Landing />
+      </AppWrapper>
     </>
   );
 }
