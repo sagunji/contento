@@ -12,6 +12,7 @@ export const Article = styled.article`
     height: 100%;
     border-radius: 12px;
     opacity: 1;
+    object-fit: cover;
   }
 `;
   
