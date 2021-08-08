@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { DATA } from 'constants/data';
-import Wrapper from 'modules/landing/components/Wrapper';
+import Wrapper from 'components/layout/Wrapper';
 
 import News from '../components/news';
 import Seemore from 'modules/landing/components/Seemore';
