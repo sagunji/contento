@@ -1,8 +1,8 @@
-import FilterWrapper from '../components/FilterWrapper';
+import styled from 'styled-components';
+
+import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
 import Item from 'modules/sidebar/components/Item';
 import Message from 'modules/sidebar/components/Message';
-
-import styled from 'styled-components';
 
 const GENERAL = [{
   icon: '/assets/icons/home.png',
