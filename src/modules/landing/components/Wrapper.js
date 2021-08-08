@@ -1,5 +1,7 @@
+import { Container } from './Wrapper.style';
+
 const Wrapper = ({ children }) => {
-  return <div className="wrapper">{children}</div>;
+  return <Container>{children}</Container>;
 };
 
 export default Wrapper;
