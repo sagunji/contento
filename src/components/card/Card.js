@@ -2,6 +2,16 @@ import { useState  } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import {
+  Article,
+  SourceImage,
+  ImageContainer,
+  SourceContainer,
+  SourceTitle,
+  CardContent,
+  ArticleImage
+} from './Card.style';
+
 import CardActions from './CardActions';
 
 const Card = ({
@@ -15,25 +25,26 @@ const Card = ({
   const [isActionShown, setIsActionShown] = useState(false);
 
   return (
-    <article>
-      <div className="image__container"
+    <Article>
+      <ImageContainer
         onMouseEnter={() => setIsActionShown(true)}
-        onMouseLeave={() => setIsActionShown(true)}>
-        <img src={image} alt={title} className={`${isActionShown && 'blur'}`} />
+        onMouseLeave={() => setIsActionShown(false)}>
+        <ArticleImage src={image} alt={title} blur={isActionShown} />
         { isActionShown && <CardActions /> }
-      </div>
-      
-      <Link to={{ pathname: domain}} target="_blank" className="source">
-        <div className="containter__image">
-          <img src={favicon} alt={sourceTitle} />
-        </div>
-        <div className="source__title">{sourceTitle}</div>
-      </Link>
-      <div className="text">
+      </ImageContainer>
+      <SourceContainer>
+        <Link to={{ pathname: domain}} target="_blank">
+          <SourceImage>
+            <img src={favicon} alt={sourceTitle} />
+          </SourceImage>
+          <SourceTitle>{sourceTitle}</SourceTitle>
+        </Link>
+      </SourceContainer>
+      <CardContent>
         <h2>{title}</h2>
         <p>{description}</p>
-      </div>
-    </article>
+      </CardContent>
+    </Article>
   );
 }
 

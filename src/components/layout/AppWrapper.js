@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 
+import { Container } from './AppWrapper.style';
+
 const AppWrapper = ({ children }) => {
-  return <main className="container">{children}</main>;
+  return <Container>{children}</Container>;
 };
 
 AppWrapper.propTypes ={
@@ -10,6 +12,5 @@ AppWrapper.propTypes ={
     PropTypes.node
   ])
 }
-
 
 export default AppWrapper;
