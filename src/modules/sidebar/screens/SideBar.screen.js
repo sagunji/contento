@@ -1,4 +1,4 @@
-import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
+import FilterWrapper from '../components/FilterWrapper';
 import Item from 'modules/sidebar/components/Item';
 import Message from 'modules/sidebar/components/Message';
 
