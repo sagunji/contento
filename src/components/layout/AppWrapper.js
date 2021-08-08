@@ -8,6 +8,7 @@ export const Container = styled.main`
   flex-direction: row;
   margin: auto;
   margin-top: 46px;
+  padding-bottom: 30px
 `;
 
 const AppWrapper = ({ children }) => {
