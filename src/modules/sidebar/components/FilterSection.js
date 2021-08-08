@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const FilterWrapper = ({ children }) => {
+const FilterSection = ({ children }) => {
   return (
     <Wrapper>
       <h3>FILTERS</h3>
@@ -23,11 +23,11 @@ const FilterWrapper = ({ children }) => {
   );
 }
 
-FilterWrapper.propTypes = {
+FilterSection.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ])
 }
 
-export default FilterWrapper;
+export default FilterSection;

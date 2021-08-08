@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 import Item from 'modules/sidebar/components/Item';
-import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
 import Message from 'modules/sidebar/components/Message';
+import FilterSection from 'modules/sidebar/components/FilterSection';
 
 const GENERAL = [{
   icon: '/assets/icons/home.png',
@@ -48,9 +48,9 @@ const SideBar = () => {
     <SideBarWrapper>
       {GENERAL.map((gen, idx) => <Item key={idx} {...gen} />)}
 
-      <FilterWrapper>
+      <FilterSection>
         {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
-      </FilterWrapper>
+      </FilterSection>
       <Message />
     </SideBarWrapper>
   );
