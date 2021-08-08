@@ -1,24 +1,23 @@
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components/macro';
- 
-export const Container = styled.main`
-  max-width: 1388px;
+
+const Container = styled.div`
+  width: 236px;
+  margin-right: 74px;
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 46px;
+  flex-direction: column;
 `;
 
-const AppWrapper = ({ children }) => {
+const SideBarWrapper = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-AppWrapper.propTypes ={
+SideBarWrapper.propTypes ={
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ])
 }
 
-export default AppWrapper;
+export default SideBarWrapper;

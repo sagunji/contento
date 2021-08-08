@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-
 import Item from 'modules/sidebar/components/Item';
 import Message from 'modules/sidebar/components/Message';
 import FilterSection from 'modules/sidebar/components/FilterSection';
+import SideBarWrapper from 'components/layout/SideBarWrapper';
 
 const GENERAL = [{
   icon: '/assets/icons/home.png',
@@ -35,13 +34,6 @@ const FILTERS = [{
   title: 'Influencers',
   route: '/',
 }];
-
-const SideBarWrapper = styled.div`
-  width: 236px;
-  margin-right: 74px;
-  display: flex;
-  flex-direction: column;
-`;
 
 const SideBar = () => {
   return (
