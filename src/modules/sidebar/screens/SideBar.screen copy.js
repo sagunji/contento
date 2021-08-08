@@ -1,38 +1,36 @@
 import Item from 'modules/sidebar/components/Item';
 import Message from 'modules/sidebar/components/Message';
-import SideBarWrapper from 'components/layout/SideBarWrapper';
 import FilterSection from 'modules/sidebar/components/FilterSection';
-
-import { FILTER_ICON } from 'assets/icons';
+import SideBarWrapper from 'components/layout/SideBarWrapper';
 
 const GENERAL = [{
-  icon: FILTER_ICON.HomeIcon,
+  icon: '/assets/icons/home.png',
   title: 'For you',
   route: '/',
 },{
-  icon: FILTER_ICON.PersonalizedIcon,
+  icon: '/assets/icons/svgexport-15-1.svg',
   title: 'Personalized',
   route: '/',
 }]
 
 const FILTERS = [{
-  icon: FILTER_ICON.BookmarkSolidIcon,
+  icon: '/assets/icons/bookmark.png',
   title: 'Saved for later',
   route: '/',
 },{
-  icon: FILTER_ICON.TopicsIcon,
+  icon: '/assets/icons/icons tag-1.svg',
   title: 'Topics',
   route: '/',
 }, {
-  icon: FILTER_ICON.LatestIcon,
+  icon: '/assets/icons/clock.png',
   title: 'Latest',
   route: '/',
 }, {
-  icon: FILTER_ICON.HandpickedIcon,
+  icon: '/assets/icons/icon handpicked.svg',
   title: 'Handpicked',
   route: '/',
 }, {
-  icon: FILTER_ICON.TwitterIcon,
+  icon: '/assets/icons/icon twitter.svg',
   title: 'Influencers',
   route: '/',
 }];

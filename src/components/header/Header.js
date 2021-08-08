@@ -2,6 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 import * as ROUTES from 'constants/routes';
 
+import { Logo, UserImage } from 'assets/images';
+import { PlusIcon } from 'assets/icons';
+
 import {
   Button,
   HeaderWrapper,
@@ -15,7 +18,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <LogoWrapper>
-        <img src="/assets/icons/mandala-logo.png" alt="logo" />
+        <img src={Logo} alt="logo" />
       </LogoWrapper>
       <Navigation>
         <NavLink to={ROUTES.SCHEDULE}>Schedule</NavLink>
@@ -25,10 +28,10 @@ const Header = () => {
       </Navigation>
       <UserWrapper>
         <Button className="btn__add">
-          <img src="/assets/icons/icon plus.svg" alt="add item" />
+          <img src={PlusIcon} alt="add item" />
         </Button>
         <PictureWrapper className="profile-pic">
-          <img src="/assets/user/Image 4@2x.png" alt="user" />
+          <img src={UserImage} alt="user" />
         </PictureWrapper>
       </UserWrapper>
     </HeaderWrapper>

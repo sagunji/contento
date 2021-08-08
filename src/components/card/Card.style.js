@@ -52,7 +52,7 @@ export const SourceContainer = styled.div`
   a {
     display: flex;
     align-items: center;
-    margin: 20px 0px;
+    margin: 20px 0px 15px 0px;
     gap: 8px;
     text-decoration: none;
   }
