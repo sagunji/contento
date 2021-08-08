@@ -178,11 +178,6 @@ nav a:hover {
   opacity: 1;
 }
 
-.grid > article img:hover {
-  opacity: 0.5;
-  background: #333333 0% 0% no-repeat padding-box;
-}
-
 .items__overlay {
   position: absolute;
   height: 40px;
@@ -205,6 +200,7 @@ nav a:hover {
   display: inline-flex;
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
+  cursor: pointer;
 }
 
 .items__overlay .action__container img {
@@ -213,17 +209,31 @@ nav a:hover {
   margin: auto;
 }
 
+.items__overlay .action__container:hover {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.blur {
+  filter: blur(1px);
+}
+
 .image__container button {
   width: 146px;
   height: 56px;
   position: absolute;
-  top: 42%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border: none;
   font-weight: bold;
   color: #333333;
   background: white;
   border-radius: 28px;
+  cursor: pointer;
 }
 
 .source {

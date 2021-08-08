@@ -6,9 +6,9 @@ const CardActions = () => {
     <div>
       <button>Post now</button>
       <div className="items__overlay">
-        <Action icon={Dislike} info="dislike" />
-        <Action icon={Bookmark} info="bookmark" />
-        <Action icon={Details} info="details" />
+        <Action icon={Dislike} info="dislike" label="Downvote"  />
+        <Action icon={Bookmark} info="bookmark" label="Save for later" />
+        <Action icon={Details} info="details" label="View details" />
       </div>
     </div>
   )

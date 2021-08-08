@@ -1,3 +1,4 @@
+import { useState  } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -11,14 +12,18 @@ const Card = ({
   favicon,
   domain
 }) => {
+  const [isActionShown, setIsActionShown] = useState(false);
+
   return (
     <article>
-      <div className="image__container">
-        <img src={image} alt={title} />
-        <CardActions />
+      <div className="image__container"
+        onMouseEnter={() => setIsActionShown(true)}
+        onMouseLeave={() => setIsActionShown(true)}>
+        <img src={image} alt={title} className={`${isActionShown && 'blur'}`} />
+        { isActionShown && <CardActions /> }
       </div>
       
-      <Link to={domain} target="_blank" className="source">
+      <Link to={{ pathname: domain}} target="_blank" className="source">
         <div className="containter__image">
           <img src={favicon} alt={sourceTitle} />
         </div>
