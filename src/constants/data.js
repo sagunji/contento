@@ -1,6 +1,6 @@
 import FORBES_BANNER from '../assets/news-banner/Image 7-1.png';
-import BBC_BANNER from '../assets/news-banner/18-km-benefits-1.png';
-import ZENDESK_BANNER from '../assets/news-banner/photo-1551288049-bebda4e38f71-1.png';
+import ZENDESK_BANNER from '../assets/news-banner/18-km-benefits-1.png';
+import BBC_BANNER from '../assets/news-banner/photo-1551288049-bebda4e38f71-1.png';
 
 import FORBES_ICON from '../assets/source/Image 16-1@2x.png';
 import BBC_ICON from '../assets/source/download-1@2x copy.png';
