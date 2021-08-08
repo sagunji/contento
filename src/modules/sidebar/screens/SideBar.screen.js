@@ -47,10 +47,10 @@ const SideBar = () => {
   return (
     <SideBarWrapper>
       {GENERAL.map((gen, idx) => <Item key={idx} {...gen} />)}
+      {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
 
-      <FilterWrapper>
-        {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
-      </FilterWrapper>
+      {/* <FilterWrapper> */}
+      {/* </FilterWrapper> */}
       <Message />
     </SideBarWrapper>
   );
