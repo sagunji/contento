@@ -30,5 +30,5 @@ export const DATA = [{
   domain: 'https://www.zendesk.com/',
   favicon: ZENDESK_ICON,
   image: ZENDESK_BANNER,
-  }
+  },
 ]

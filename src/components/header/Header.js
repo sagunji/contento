@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import * as ROUTES from 'constants/routes';
 
@@ -18,13 +18,15 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <LogoWrapper>
-        <img src={Logo} alt="logo" />
+        <Link to={ROUTES.MAIN_PAGE}>
+          <img src={Logo} alt="logo" />
+        </Link>
       </LogoWrapper>
       <Navigation>
-        <NavLink to={ROUTES.SCHEDULE}>Schedule</NavLink>
-        <NavLink to={ROUTES.CONTENT}>Content</NavLink>
-        <NavLink to={ROUTES.GROW}>Grow</NavLink>
-        <NavLink to={ROUTES.REPORT}>Report</NavLink>
+        <NavLink to={ROUTES.SCHEDULE} activeClassName="active">Schedule</NavLink>
+        <NavLink to={ROUTES.CONTENT} activeClassName="active">Content</NavLink>
+        <NavLink to={ROUTES.GROW} activeClassName="active">Grow</NavLink>
+        <NavLink to={ROUTES.REPORT} activeClassName="active">Report</NavLink>
       </Navigation>
       <UserWrapper>
         <Button className="btn__add">
