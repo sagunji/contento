@@ -1,8 +1,20 @@
 import styled from 'styled-components';
 
-import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
 import Item from 'modules/sidebar/components/Item';
 import Message from 'modules/sidebar/components/Message';
+
+const FilterWrapper = styled.div`
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px #00000021 solid;
+
+  h3 {
+    color: #bcbcbc;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+    margin-bottom: 12px;
+  }
+`;
 
 const GENERAL = [{
   icon: '/assets/icons/home.png',
@@ -47,10 +59,11 @@ const SideBar = () => {
   return (
     <SideBarWrapper>
       {GENERAL.map((gen, idx) => <Item key={idx} {...gen} />)}
-      {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
 
-      {/* <FilterWrapper> */}
-      {/* </FilterWrapper> */}
+      <FilterWrapper>
+        <h3>FILTERS</h3>
+        {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
+      </FilterWrapper>
       <Message />
     </SideBarWrapper>
   );
