@@ -32,6 +32,5 @@ p {
 
 .active {
   background: #1111110f 0% 0% no-repeat padding-box;
-  font-weight: bold !important;
   color: #333333 !important;
 }

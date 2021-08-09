@@ -37,7 +37,6 @@ const Navigation = styled.nav`
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #333333;
     border-radius: 20px;
     padding: 0.8125rem 1.25rem;
     text-decoration: none;
@@ -47,7 +46,6 @@ const Navigation = styled.nav`
 
   a:hover {
     background: #1111110f 0% 0% no-repeat padding-box;
-    font-weight: bold;
     color: #333333;
   }
 `
