@@ -7,7 +7,7 @@ const Seemore = () => {
   return (
     <Wrapper>
       <Link to="/">
-        <Text>See more</Text>
+        <Text>See More</Text>
         <img src={ChevronRightIcon} alt="chevronr right" />
       </Link>
     </Wrapper>
