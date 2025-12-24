@@ -1,51 +1,52 @@
-import FilterWrapper from 'modules/sidebar/components/FilterWrapper';
 import Item from 'modules/sidebar/components/Item';
+import Message from 'modules/sidebar/components/Message';
+import SideBarWrapper from 'components/layout/SideBarWrapper';
+import FilterSection from 'modules/sidebar/components/FilterSection';
+
+import { FILTER_ICON } from 'assets/icons';
 
 const GENERAL = [{
-  icon: '/assets/icons/home.png',
+  icon: FILTER_ICON.HomeIcon,
   title: 'For you',
   route: '/',
 },{
-  icon: '/assets/icons/svgexport-15-1.svg',
+  icon: FILTER_ICON.PersonalizedIcon,
   title: 'Personalized',
   route: '/',
 }]
 
 const FILTERS = [{
-  icon: '/assets/icons/bookmark.png',
+  icon: FILTER_ICON.BookmarkSolidIcon,
   title: 'Saved for later',
   route: '/',
 },{
-  icon: '/assets/icons/icons tag-1.svg',
+  icon: FILTER_ICON.TopicsIcon,
   title: 'Topics',
   route: '/',
 }, {
-  icon: '/assets/icons/clock.png',
+  icon: FILTER_ICON.LatestIcon,
   title: 'Latest',
   route: '/',
 }, {
-  icon: '/assets/icons/icon handpicked.svg',
+  icon: FILTER_ICON.HandpickedIcon,
   title: 'Handpicked',
   route: '/',
 }, {
-  icon: '/assets/icons/icon twitter.svg',
+  icon: FILTER_ICON.TwitterIcon,
   title: 'Influencers',
   route: '/',
-}]
+}];
 
 const SideBar = () => {
   return (
-    <div className="sidebar__nav">
+    <SideBarWrapper>
       {GENERAL.map((gen, idx) => <Item key={idx} {...gen} />)}
 
-      <FilterWrapper>
+      <FilterSection>
         {FILTERS.map((filter, idx) => <Item key={idx} {...filter} />)}
-      </FilterWrapper>
-      <div className="mt-50">
-        <p><span className="schedule__text">Schedule 2 more articles</span></p>
-        <p>To fill this week.</p>
-      </div>
-    </div>
+      </FilterSection>
+      <Message />
+    </SideBarWrapper>
   );
 }
 

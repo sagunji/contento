@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 
+import { Grid, Section } from './News.style';
+
 import Card from 'components/card';
 
-const News = ({ children, styles, posts }) => {
+const News = ({ children, marginTop, posts }) => {
   return (
-    <section className={styles}>
+    <Section marginTop={marginTop}>
       {children}
-      <div className="grid">
+      <Grid>
         { posts.map((dt, idx) => <Card key={idx} {...dt} />) }
-      </div>
-    </section>
+      </Grid>
+    </Section>
   )
 }
 
@@ -18,7 +20,7 @@ News.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]),
-  styles: PropTypes.string,
+  marginTop: PropTypes.number,
   posts: PropTypes.arrayOf(PropTypes.shape({
     url: PropTypes.string,
     title: PropTypes.string.isRequired,

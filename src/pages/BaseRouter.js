@@ -1,16 +1,19 @@
-import { Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as ROUTES from 'constants/routes';
 
-import history from 'utils/history';
-
 import MainPage from './MainPage';
+import Header from 'components/header';
 
 const BaseRouter = () => (
-  <Router history={history}>
+  <Router>
+    <Header />
+
     <Switch>
-      <Route path={ROUTES.MAIN_PAGE} component={MainPage} />
-      <Route path={ROUTES.CONTENT} component={MainPage} />
+      <Route exact path={ROUTES.MAIN_PAGE} component={MainPage} />
       <Route path={ROUTES.SCHEDULE} component={MainPage} />
+      <Route path={ROUTES.CONTENT} component={MainPage} />
+      <Route path={ROUTES.GROW} component={MainPage} />
+      <Route path={ROUTES.REPORT} component={MainPage} />
     </Switch>
   </Router>
 );
